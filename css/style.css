@@ -1,0 +1,65 @@
+:root{
+    --dark_cyan: hsl(185, 75%, 39%);
+    --dark-cyan_light: #26B5BD;
+    --very_dark_blue: hsl(229, 23%, 23%);
+    --dark_neutral: hsl(0, 0%, 59%);
+}
+
+html{
+    background-color: var(--dark_cyan);
+    position: relative;
+}
+
+html::after,
+html::before{
+    content: '';
+    position: fixed;
+    background-color: tomato;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;    
+}
+
+html::before {
+    top: -100px;
+    left: -100px;
+    background-color: var(--dark-cyan_light);
+}
+
+html::after{
+    bottom: -100px;
+    right: -100px;
+    background-color: var(--dark-cyan_light);
+
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 210px;
+    height: 230px;
+    background-color: whitesmoke;
+}
+
+.card_header{
+    background-image: url('../images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    height: 90px;
+    position: relative;
+}
+
+.card_image{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
