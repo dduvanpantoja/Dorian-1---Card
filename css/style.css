@@ -43,14 +43,14 @@ body{
 
 .card{
     width: 210px;
-    height: 230px;
+    height: 210px;
     background-color: whitesmoke;
 }
 
 .card_header{
     background-image: url('../images/bg-pattern-card.svg');
     background-repeat: no-repeat;
-    height: 90px;
+    height: 80px;
     position: relative;
 }
 
@@ -62,4 +62,43 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    border: 3px solid whitesmoke;
 }
+
+.card_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 34px;
+    width: 150px;
+    margin: 45px auto 0px;
+}
+
+.card_text{
+    margin: 0;
+    line-height: 1.3;
+}
+
+.card_text_size{
+    font-size: 12px;
+}
+
+.card_text--light{
+    color: gray;
+}
+
+.cart_stats{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card_number{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
